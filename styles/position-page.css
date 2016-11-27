@@ -1,1 +1,78 @@
+html { 
+  background: url(https://github.com/Thinkful-Ed/css_layout_exercises_starter_files/blob/master/images/outerspace_landscape.jpeg?raw=true) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0 60px 0 60px;
+	background: grey;
+	width: 100%;
+}
+
+nav img {
+	height: 50px;
+	width: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 50%;
+}
+
+nav ul {
+	display: inline;
+	position: absolute;
+	left: 150px;
+	padding-left: 0;
+	margin: 20px auto;
+}
+
+nav ul li {
+	display: inline;
+	margin-left: 0;
+	padding: 3px 15px;
+	border-left: 1px solid #000;
+	list-style: none;
+}
+
+nav ul li.first {
+	margin-left: 0;
+	border-left: none;
+	list-style: none;
+	display: inline;
+}
+
+.green-box {
+	border: 10px green dotted;
+	width: 600px;
+	height: 300px;
+	margin: 250px auto;
+	position: relative;
+}
+
+.cat {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: -100px;
+	left: -100px;
+	background: url(https://github.com/Thinkful-Ed/css_layout_exercises_starter_files/blob/master/images/spacecat.png?raw=true);
+}
+
+.dog {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	bottom: -100px;
+	right: -100px;
+	background: url(https://github.com/Thinkful-Ed/css_layout_exercises_starter_files/blob/master/images/spacedog.png?raw=true);
+}
+
+.cat, .dog {
+	background-size: cover;
+}
